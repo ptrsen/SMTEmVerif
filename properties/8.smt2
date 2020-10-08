@@ -1,0 +1,19 @@
+(assert 
+  (not
+    (=
+      (/ 
+        edges_size
+        (*
+          nodes_size
+          (-
+            nodes_size
+            1
+          )
+        )
+      )
+      1
+    )
+  )
+)
+
+(check-sat)
